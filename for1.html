@@ -1,0 +1,42 @@
+<!DOCTYPE html> <head>
+<link rel="stylesheet" type="text/css" href="register.css">
+<title> Register </title> <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/> </head> <body>
+<header>
+<img src="logo.png" id="logo">
+<h1><b><i>E-vesit</i></b></h1>
+</header> <nav>
+<ul> <li><a href="#home">HOME</A></li> <li><a href="sdfh">EXPLORE</a></li> <li><a href="#pro">PRODUCTS</a></li> <li><a href="#rr">RESOURCES</a></li></ul> 
+</nav><br><br><br><br> 
+<section class="new">
+<h3>NEW REGISTRATION</h3> <form action="registor.php" method="post" class="register" onsubmit="return validation()" >
+<label>First Name :</label>
+<input type="text" autocomplete="off" autofocus id="fName" onblur="uppercase('fName'); reset(this);" onfocus="change(this)">
+<span id="fname"></span>
+<label> Middle Name :</label>
+<input type="text" autocomplete="off" id="mName" onblur="uppercase('mName'); reset(this);" onfocus="change(this)">
+<label>Last Name :</label>
+<input type="text" autocomplete="off" id="lName" onblur="uppercase('lName'); reset(this);" onfocus="change(this)">
+<label>Department :</label> <select id="department" >
+<option value="empty">Select department</option> <option value="computer">computer</option> <option value="extc">electronic & telecommunication</option> <option value="etrx">electonics </option> <option value="instru">instrumentation</option> <option value="it">information technology</option> </select>
+<label>Year :</label> <select id="year" onchange="selectdivision(this);"> <option value="empty">Select a year</option> <option value="first">first</option> <option value="second">second</option> <option value="third">third</option> <option value="forth">fourth</option> </select>
+
+<label> Role :</label> <select id="role" >
+<option value="empty">Select Role</option> <option value="Teacher">Teacher</option> <option value="Student">Student</option> <option value="Lab-Assistant">Lab Assistant </option></select>
+
+<label>Phone No :</label>
+<input type="tel" id="phone" onblur="reset(this)" onfocus="change(this)"> <span id="phone"></span>
+<label>Email :</label>
+<input type="email" id="Email" autocomplete="off" onblur="reset(this)" onfocus="change(this)">
+<span id="email"></span>
+<label>Username :</label>
+<input type="text" autocomplete="off" onblur="reset(this)" onfocus="change(this)">
+<label>Password:</label>
+<input type="password" autocomplete="off" id="Password" onblur="reset(this)" onfocus="change(this)">
+<label>Confirm Password:</label> <input type="password" autocomplete="off" id="CPassword" onblur="reset(this)" onfocus="change(this)">
+<input type="submit" value="submit" id="submit" > 
+<input type="reset" value="reset" id="reset">
+</form> </section> <footer>
+<p>@ all rights reserved</p> <ul> <li><a href="copyright.html">copyright policy</li> <li><a href="privacy.html">privacy.html</a></li> <li><a href="terms.html">terms &conditions</a></li>
+</ul> </footer> <script src="register.js"></script> </body> </html>
+
+	
